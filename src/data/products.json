@@ -1,0 +1,160 @@
+[
+    {
+        "id": "1",
+        "title": "Blackview MP100 Ryzen 7430U MINI PC, 3 x 4K at 144Hz, AMD Radeon, 16 GB RAM, 512 GB",
+        "description": "El Blackview MP100 7430U Mini PC actualizado está equipado con un potente procesador Ryzen 5 7430U, con 6 núcleos/12 hilos y una frecuencia máxima de hasta 4,3 GHz.",
+        "price": 389.99,
+        "originalPrice": 389.99,
+        "rating": 4.5,
+        "reviewCount": 345,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/81ubV8HiwaL._AC_SL1500_.jpg",
+        "asin": "B0F638Z1FQ",
+        "features": [
+            "Ryzen 5 7430U, con 6 núcleos/12 hilos y una frecuencia máxima de hasta 4,3 GHz.",
+            "Pantalla triple y salida de ultra alta definición a 144 Hz",
+            "16 GB de RAM DDR4 y SSD PCIE de 512 GB",
+            "Múltiples puertos, conexiones ilimitadas",
+            "Garantía de la marca Blackview"
+        ],
+        "isFeatured": true,
+        "isBestSeller": true
+    },
+    {
+        "id": "2",
+        "title": "Smartwatch Deportivo con LED Linterna",
+        "description": "Pantalla redonda de 1,85 pulgadas y resolución HD (360*360), ofreciendo una visualización clara y detallada para una mejor experiencia visual.",
+        "price": 32.24,
+        "originalPrice": 35.73,
+        "rating": 4.5,
+        "reviewCount": 444,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/81IiwWM4dVL._AC_SL1500_.jpg",
+        "asin": "B0DQWDWP6D",
+        "features": [
+            "Pantalla grande HD, larga duración de batería.",
+            "Reloj militar con linterna LED",
+            "Llamadas Bluetooth, notificaciones y asistente de voz",
+            "110+ modos deportivos y asistente de salud",
+            "Servicio postventa de 24 meses y compatibilidad"
+        ],
+        "isFeatured": true
+    },
+    {
+        "id": "3",
+        "title": "Cafetera Espresso Automática",
+        "description": "Cafetera espresso con molinillo integrado, 19 bares de presión y pantalla táctil. Prepara café perfecto en casa.",
+        "price": 299.99,
+        "originalPrice": 449.99,
+        "rating": 4.8,
+        "reviewCount": 892,
+        "category": "Hogar",
+        "imageUrl": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=500&q=80",
+        "asin": "B09EXAMPLE3",
+        "features": [
+            "Molinillo de café integrado",
+            "19 bares de presión",
+            "Pantalla táctil LCD",
+            "Espumador de leche automático",
+            "Depósito de agua de 1.8L"
+        ],
+        "isBestSeller": true
+    },
+    {
+        "id": "4",
+        "title": "Set de Sartenes Antiadherentes (3 piezas)",
+        "description": "Juego de 3 sartenes profesionales con revestimiento antiadherente de titanio. Aptas para todo tipo de cocinas incluyendo inducción.",
+        "price": 49.99,
+        "originalPrice": 89.99,
+        "rating": 4.6,
+        "reviewCount": 3421,
+        "category": "Hogar",
+        "imageUrl": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80",
+        "asin": "B09EXAMPLE4",
+        "features": [
+            "Revestimiento antiadherente de titanio",
+            "Apto para inducción",
+            "Libre de PFOA",
+            "Mango ergonómico resistente al calor",
+            "Incluye 20cm, 24cm y 28cm"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Mochila Portátil Impermeable",
+        "description": "Mochila para portátil de hasta 17 pulgadas con puerto USB, compartimentos organizados y material impermeable.",
+        "price": 34.99,
+        "originalPrice": 59.99,
+        "rating": 4.4,
+        "reviewCount": 5672,
+        "category": "Accesorios",
+        "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80",
+        "asin": "B09EXAMPLE5",
+        "features": [
+            "Compartimento acolchado para portátil 17\"",
+            "Puerto USB externo",
+            "Material impermeable",
+            "Bolsillo antirrobo oculto",
+            "Correas acolchadas ergonómicas"
+        ],
+        "isFeatured": true
+    },
+    {
+        "id": "6",
+        "title": "Lámpara LED Escritorio Regulable",
+        "description": "Lámpara de escritorio LED con 5 modos de iluminación, carga inalámbrica y puerto USB. Perfecta para estudiar o trabajar.",
+        "price": 29.99,
+        "originalPrice": 49.99,
+        "rating": 4.5,
+        "reviewCount": 1234,
+        "category": "Hogar",
+        "imageUrl": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&q=80",
+        "asin": "B09EXAMPLE6",
+        "features": [
+            "5 modos de iluminación",
+            "Carga inalámbrica integrada",
+            "Puerto USB para cargar dispositivos",
+            "Brazo flexible ajustable",
+            "Protección ocular sin parpadeo"
+        ]
+    },
+    {
+        "id": "7",
+        "title": "Teclado Mecánico Gaming RGB",
+        "description": "Teclado mecánico con switches azules, iluminación RGB personalizable y reposamuñecas magnético. Ideal para gaming y productividad.",
+        "price": 79.99,
+        "originalPrice": 129.99,
+        "rating": 4.7,
+        "reviewCount": 2156,
+        "category": "Tecnología",
+        "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80",
+        "asin": "B09EXAMPLE7",
+        "features": [
+            "Switches mecánicos azules",
+            "Iluminación RGB personalizable",
+            "Reposamuñecas magnético",
+            "Teclas anti-ghosting",
+            "Cable USB-C trenzado"
+        ],
+        "isBestSeller": true
+    },
+    {
+        "id": "8",
+        "title": "Batidora de Vaso 2000W",
+        "description": "Batidora de vaso profesional de 2000W con jarra de vidrio de 2L, 8 velocidades y función pulse. Perfecta para smoothies y sopas.",
+        "price": 69.99,
+        "originalPrice": 119.99,
+        "rating": 4.6,
+        "reviewCount": 987,
+        "category": "Hogar",
+        "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=500&q=80",
+        "asin": "B09EXAMPLE8",
+        "features": [
+            "Motor de 2000W",
+            "Jarra de vidrio de 2L",
+            "8 velocidades + función pulse",
+            "Cuchillas de acero inoxidable",
+            "Libre de BPA"
+        ]
+    }
+]
