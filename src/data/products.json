@@ -156,5 +156,67 @@
             "Cuchillas de acero inoxidable",
             "Libre de BPA"
         ]
+    },
+    {
+        "id": "9",
+        "title": "Greenice Martina Ventilador de Techo Ø 106cm, Motor DC 29.5W, Luz LED 48W 5040lm CCT 3500-6500K, 6 Velocidades, Función Invierno-Verano, con Mando",
+        "description": "Ventilador de techo de 106 cm con motor DC silencioso y luz LED regulable (3500-6500K). 6 velocidades, función invierno-verano y mando a distancia con temporizador.",
+        "price": 44.95,
+        "rating": 3.5,
+        "reviewCount": 12,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/51xRKTrKW6L._AC_SL1500_.jpg",
+        "asin": "B0GX19DJP1",
+        "features": [
+            "Motor DC silencioso de bajo consumo (29,5W), caudal de hasta 6.580 m³/h para estancias de hasta 20 m²",
+            "Luz LED regulable de 48W (5040lm) con 3 tonos: cálido (3500K), neutro (4000K) y frío (6500K)",
+            "6 velocidades y función invierno-verano (giro reversible)",
+            "Mando a distancia con temporizador programable (1, 2 o 4 horas) y modo brisa",
+            "Diseño 2 en 1 con aspas retráctiles: parece una lámpara cuando están recogidas"
+        ],
+        "isFeatured": true,
+        "isBestSeller": false
+    },
+    {
+        "id": "10",
+        "title": "Tapo C210 (2-Pack) - Cámara IP WiFi 360° de Vigilancia 2K (3MP), Visión Nocturna, Tarjeta SD hasta 512 GB, Detección de Movimiento, Compatible con Alexa",
+        "description": "Pack de 2 cámaras de vigilancia IP WiFi con visión 360°, resolución 2K (3MP), visión nocturna y detección de movimiento. Compatible con Alexa.",
+        "price": 44.99,
+        "originalPrice": 69.99,
+        "rating": 4.7,
+        "reviewCount": 51173,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/61xU1iKZZgL._AC_SL1500_.jpg",
+        "asin": "B0BWCVYFLC",
+        "features": [
+            "Resolución 2K (3MP) con imagen nítida y detallada",
+            "Visión panorámica e inclinable 360°",
+            "Visión nocturna de hasta 8 metros",
+            "Detección de movimiento con notificaciones en el móvil",
+            "Admite tarjeta SD de hasta 512 GB y es compatible con Alexa"
+        ],
+        "isFeatured": false,
+        "isBestSeller": true
+    },
+    {
+        "id": "11",
+        "title": "Govee Lámpara de Pie Moderna RGBIC LED, Funciona con Alexa y Google Assistant, Matter, 16 Millones de Colores y 61 Modos de Escena, Sincronización Musical",
+        "description": "Lámpara de pie LED RGBIC con 16 millones de colores, 61 modos de escena y sincronización musical. Compatible con Alexa, Google Assistant y Matter.",
+        "price": 53.99,
+        "originalPrice": 89.99,
+        "rating": 4.4,
+        "reviewCount": 549,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/51y4bTE2MQL._AC_SL1000_.jpg",
+        "asin": "B09TZNZ5WD",
+        "features": [
+            "Iluminación RGBIC con 16 millones de colores DIY",
+            "61 modos de escena predefinidos",
+            "Sincronización musical con el sonido ambiente",
+            "Control por voz con Alexa y Google Assistant (compatible con Matter)",
+            "Control desde la app y diseño moderno para dormitorio o gaming room"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
     }
 ]

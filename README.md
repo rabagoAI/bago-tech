@@ -36,7 +36,7 @@ Crea un archivo `.env` en la raíz del proyecto:
 
 ```env
 # Amazon Affiliate Tag (REQUERIDO)
-VITE_AMAZON_TAG=mundogumi-21
+VITE_AMAZON_TAG=bagotech-21
 
 # Google Analytics 4 Measurement ID (OPCIONAL)
 VITE_GA4_MEASUREMENT_ID=G-XXXXXXXXXX
