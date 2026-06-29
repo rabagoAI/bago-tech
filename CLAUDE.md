@@ -162,3 +162,30 @@ Si quieres añadir una cuarta categoría (ej. `"Deporte"`):
    }
    ```
    Y añade `'Deporte'` al array de categorías del `.map()`.
+
+---
+
+## Automatizar la subida de productos con "Claude para Chrome" (pendiente)
+
+> **Estado:** pendiente de activar. Requiere instalar la extensión "Claude para Chrome".
+> Anotado para ejecutar en una próxima sesión.
+
+El objetivo es que, para añadir un producto, el usuario solo tenga que pasar **la URL de Amazon** (o varias) y Claude haga el resto automáticamente, sin copiar precio/imagen/valoraciones a mano.
+
+### Requisitos previos
+1. Instalar y conectar la extensión **"Claude para Chrome"** (MCP `mcp__Claude_in_Chrome__*`).
+2. Tener Chrome **logueado con la cuenta de afiliado** de Amazon (Francisco García) para que precios y datos sean los de `amazon.es`.
+
+### Flujo a ejecutar (cuando la extensión esté disponible)
+1. El usuario pasa una o varias **URLs de producto de Amazon**.
+2. Claude, vía la extensión de Chrome, **navega a cada página** y extrae del DOM: `title`, `price`, `originalPrice` (si hay descuento), `rating`, `reviewCount`, `features` e `imageUrl` (imagen principal). El `asin` se saca de la URL (`/dp/XXXXXXXXXX`).
+3. Claude monta el objeto JSON con el siguiente `id` libre y lo muestra para que el usuario confirme `category` y si va como `isFeatured` / `isBestSeller`.
+4. Inserta en `src/data/products.json`, valida con `npm run build` y (si el usuario lo pide) hace commit + push.
+
+### Limitaciones conocidas
+- Amazon puede mostrar **captchas** o **precios que varían por sesión/región**; en ese caso Claude lo avisa y el usuario confirma el dato manualmente.
+- No es scraping masivo: abre cada página como lo haría una persona. Válido para añadir productos de uno en uno.
+- El **tag de afiliado** lo añade siempre la web automáticamente (`bagotech-21`), no hay que tocarlo al añadir productos.
+
+### Alternativa futura (Nivel 3)
+Cuando la cuenta de afiliado esté consolidada (tras 3 ventas cualificadas), se puede usar la **Amazon Product Advertising API (PA-API)** para obtener todos los datos del producto a partir del ASIN de forma 100% automática, sin navegador.
