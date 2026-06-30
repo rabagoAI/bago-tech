@@ -165,10 +165,17 @@ Si quieres añadir una cuarta categoría (ej. `"Deporte"`):
 
 ---
 
+## Subida de productos: skill `/add-product`
+
+Existe una skill propia en `.claude/skills/add-product/SKILL.md` que automatiza añadir productos al catálogo. Se invoca con `/add-product` (o pasando directamente una o varias URLs de Amazon). Funciona en dos modos:
+
+- **Semiautomático (hoy):** le pasas la URL + los datos (captura o copiados) y hace el JSON, el `id`, `npm run build` y (si confirmas) el commit.
+- **Automático (cuando la extensión de Chrome esté conectada):** detecta el navegador y extrae precio/imagen/valoraciones/título sola; tú solo pasas la URL.
+
 ## Automatizar la subida de productos con "Claude para Chrome" (pendiente)
 
 > **Estado:** pendiente de activar. Requiere instalar la extensión "Claude para Chrome".
-> Anotado para ejecutar en una próxima sesión.
+> Cuando esté conectada, la skill `/add-product` pasa sola al modo automático.
 
 El objetivo es que, para añadir un producto, el usuario solo tenga que pasar **la URL de Amazon** (o varias) y Claude haga el resto automáticamente, sin copiar precio/imagen/valoraciones a mano.
 

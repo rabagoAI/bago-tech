@@ -38,124 +38,7 @@
             "110+ modos deportivos y asistente de salud",
             "Servicio postventa de 24 meses y compatibilidad"
         ],
-        "isFeatured": true
-    },
-    {
-        "id": "3",
-        "title": "Cafetera Espresso Automática",
-        "description": "Cafetera espresso con molinillo integrado, 19 bares de presión y pantalla táctil. Prepara café perfecto en casa.",
-        "price": 299.99,
-        "originalPrice": 449.99,
-        "rating": 4.8,
-        "reviewCount": 892,
-        "category": "Hogar",
-        "imageUrl": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=500&q=80",
-        "asin": "B09EXAMPLE3",
-        "features": [
-            "Molinillo de café integrado",
-            "19 bares de presión",
-            "Pantalla táctil LCD",
-            "Espumador de leche automático",
-            "Depósito de agua de 1.8L"
-        ],
-        "isBestSeller": true
-    },
-    {
-        "id": "4",
-        "title": "Set de Sartenes Antiadherentes (3 piezas)",
-        "description": "Juego de 3 sartenes profesionales con revestimiento antiadherente de titanio. Aptas para todo tipo de cocinas incluyendo inducción.",
-        "price": 49.99,
-        "originalPrice": 89.99,
-        "rating": 4.6,
-        "reviewCount": 3421,
-        "category": "Hogar",
-        "imageUrl": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80",
-        "asin": "B09EXAMPLE4",
-        "features": [
-            "Revestimiento antiadherente de titanio",
-            "Apto para inducción",
-            "Libre de PFOA",
-            "Mango ergonómico resistente al calor",
-            "Incluye 20cm, 24cm y 28cm"
-        ]
-    },
-    {
-        "id": "5",
-        "title": "Mochila Portátil Impermeable",
-        "description": "Mochila para portátil de hasta 17 pulgadas con puerto USB, compartimentos organizados y material impermeable.",
-        "price": 34.99,
-        "originalPrice": 59.99,
-        "rating": 4.4,
-        "reviewCount": 5672,
-        "category": "Accesorios",
-        "imageUrl": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80",
-        "asin": "B09EXAMPLE5",
-        "features": [
-            "Compartimento acolchado para portátil 17\"",
-            "Puerto USB externo",
-            "Material impermeable",
-            "Bolsillo antirrobo oculto",
-            "Correas acolchadas ergonómicas"
-        ],
-        "isFeatured": true
-    },
-    {
-        "id": "6",
-        "title": "Lámpara LED Escritorio Regulable",
-        "description": "Lámpara de escritorio LED con 5 modos de iluminación, carga inalámbrica y puerto USB. Perfecta para estudiar o trabajar.",
-        "price": 29.99,
-        "originalPrice": 49.99,
-        "rating": 4.5,
-        "reviewCount": 1234,
-        "category": "Hogar",
-        "imageUrl": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&q=80",
-        "asin": "B09EXAMPLE6",
-        "features": [
-            "5 modos de iluminación",
-            "Carga inalámbrica integrada",
-            "Puerto USB para cargar dispositivos",
-            "Brazo flexible ajustable",
-            "Protección ocular sin parpadeo"
-        ]
-    },
-    {
-        "id": "7",
-        "title": "Teclado Mecánico Gaming RGB",
-        "description": "Teclado mecánico con switches azules, iluminación RGB personalizable y reposamuñecas magnético. Ideal para gaming y productividad.",
-        "price": 79.99,
-        "originalPrice": 129.99,
-        "rating": 4.7,
-        "reviewCount": 2156,
-        "category": "Tecnología",
-        "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&q=80",
-        "asin": "B09EXAMPLE7",
-        "features": [
-            "Switches mecánicos azules",
-            "Iluminación RGB personalizable",
-            "Reposamuñecas magnético",
-            "Teclas anti-ghosting",
-            "Cable USB-C trenzado"
-        ],
-        "isBestSeller": true
-    },
-    {
-        "id": "8",
-        "title": "Batidora de Vaso 2000W",
-        "description": "Batidora de vaso profesional de 2000W con jarra de vidrio de 2L, 8 velocidades y función pulse. Perfecta para smoothies y sopas.",
-        "price": 69.99,
-        "originalPrice": 119.99,
-        "rating": 4.6,
-        "reviewCount": 987,
-        "category": "Hogar",
-        "imageUrl": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=500&q=80",
-        "asin": "B09EXAMPLE8",
-        "features": [
-            "Motor de 2000W",
-            "Jarra de vidrio de 2L",
-            "8 velocidades + función pulse",
-            "Cuchillas de acero inoxidable",
-            "Libre de BPA"
-        ]
+        "isFeatured": false
     },
     {
         "id": "9",
@@ -215,6 +98,193 @@
             "Sincronización musical con el sonido ambiente",
             "Control por voz con Alexa y Google Assistant (compatible con Matter)",
             "Control desde la app y diseño moderno para dormitorio o gaming room"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "12",
+        "title": "XIAOMI Redmi Watch 5 Active, Smartwatch con Llamadas Bluetooth, Pantalla LCD de 2'', Monitor de Frecuencia Cardíaca, 140 Modos Deportivos, hasta 18 Días de Autonomía",
+        "description": "Smartwatch con pantalla LCD de 2'', llamadas Bluetooth, monitor de frecuencia cardíaca, 140 modos deportivos y hasta 18 días de autonomía.",
+        "price": 29.22,
+        "originalPrice": 35.99,
+        "rating": 4.6,
+        "reviewCount": 22986,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/6138IWGtvHL._AC_SL1500_.jpg",
+        "asin": "B0DFHFM1X9",
+        "features": [
+            "Pantalla LCD ultra grande de 2,0 pulgadas (320 x 385 px)",
+            "Llamadas Bluetooth con cancelación de ruido de doble micrófono",
+            "140 modos deportivos y seguimiento de salud (frecuencia cardíaca, SpO2 y sueño)",
+            "Resistencia al agua 5ATM",
+            "Hasta 18 días de autonomía"
+        ],
+        "isFeatured": false,
+        "isBestSeller": true
+    },
+    {
+        "id": "13",
+        "title": "Proyector Portátil 4K Supote (App Integrada), Resolución Nativa 1920x1080P, WiFi 6, Bluetooth 5.2, Rotación 180°, Compatible con HDMI/TV Stick/USB",
+        "description": "Proyector portátil con resolución nativa 1080p (compatible con 4K), WiFi 6, Bluetooth 5.2 y rotación de 180°. Compatible con HDMI, TV Stick, USB y portátil.",
+        "price": 63.99,
+        "originalPrice": 112.99,
+        "rating": 4.4,
+        "reviewCount": 4741,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/71c-vymTCQL._AC_SL1500_.jpg",
+        "asin": "B0DCW34G9T",
+        "features": [
+            "Resolución nativa 1920x1080P (compatible con contenido 4K)",
+            "Conectividad WiFi 6 y Bluetooth 5.2",
+            "Rotación de 180° con aplicaciones integradas",
+            "Compatible con HDMI, TV Stick, USB y portátil",
+            "Modo de control dual (ratón y mando a distancia)"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "14",
+        "title": "XIAOMI Redmi Note 15 - Smartphone 8+256GB, Pantalla AMOLED FHD+ de 6,77\", MediaTek Helio G100-Ultra, Cámara de 108MP, Batería de 6000 mAh",
+        "description": "Smartphone con pantalla AMOLED FHD+ de 6,77'', procesador MediaTek Helio G100-Ultra, cámara de 108MP y batería de 6000 mAh. Versión 8+256GB.",
+        "price": 189.00,
+        "originalPrice": 249.90,
+        "rating": 4.3,
+        "reviewCount": 2747,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/61t6zUrMp4L._AC_SL1500_.jpg",
+        "asin": "B0FX9Y2PBR",
+        "features": [
+            "Pantalla AMOLED FHD+ de 6,77 pulgadas",
+            "Procesador MediaTek Helio G100-Ultra, 8+256GB",
+            "Cámara principal de 108MP",
+            "Batería de 6000 mAh de larga duración",
+            "Resistencia al agua y al polvo IP64"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "15",
+        "title": "Amazon Fire TV Stick 4K Max (Última Generación), Dispositivo de Streaming compatible con Wi-Fi 6E, Dolby Vision, HDR10+ y Dolby Atmos, con Alexa",
+        "description": "Dispositivo de streaming 4K con Wi-Fi 6E, Dolby Vision, HDR10+ y audio Dolby Atmos. El Fire TV Stick más potente, con mando por voz Alexa.",
+        "price": 79.99,
+        "rating": 4.6,
+        "reviewCount": 24253,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/61HPNpd+CsL._AC_SL1500_.jpg",
+        "asin": "B0CW4HD359",
+        "features": [
+            "Reproducción en streaming 4K Ultra HD con Dolby Vision y HDR10+",
+            "Audio inmersivo Dolby Atmos",
+            "Compatible con Wi-Fi 6E para streaming más fluido",
+            "Mando por voz con Alexa",
+            "Fondo ambiental con más de 2000 obras de arte"
+        ],
+        "isFeatured": false,
+        "isBestSeller": true
+    },
+    {
+        "id": "16",
+        "title": "Torre de Enchufes Vertical, Regleta con 8 Tomas + 4 USB (3 USB-A y 1 USB-C), 2500W/10A, Protección contra Sobretensiones, Interruptor, Cable de 2M",
+        "description": "Torre regleta vertical con 8 enchufes y 4 puertos USB (3 USB-A + 1 USB-C), protección contra sobretensiones, interruptor general y cable de 2 metros.",
+        "price": 22.79,
+        "originalPrice": 23.99,
+        "rating": 4.8,
+        "reviewCount": 7147,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/71a8yOLPauL._AC_SL1500_.jpg",
+        "asin": "B0BXWTFNKD",
+        "features": [
+            "8 tomas de corriente + 4 puertos USB (3 USB-A y 1 USB-C)",
+            "Potencia máxima total de 2500W/10A",
+            "Protección contra sobretensiones",
+            "Interruptor general de encendido/apagado",
+            "Diseño vertical en torre con cable de 2 metros"
+        ],
+        "isFeatured": true,
+        "isBestSeller": false
+    },
+    {
+        "id": "17",
+        "title": "Echo Dot (Última Generación) - Altavoz Inteligente con Alexa, Sonido Más Potente y Envolvente, WiFi y Bluetooth, Antracita",
+        "description": "Altavoz inteligente con Alexa, sonido más potente y envolvente, conexión wifi y Bluetooth. Controla tu hogar digital con la voz.",
+        "price": 62.99,
+        "originalPrice": 64.99,
+        "rating": 4.7,
+        "reviewCount": 187097,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/71G9l50-fGL._AC_SL1500_.jpg",
+        "asin": "B09B8X9RGM",
+        "features": [
+            "Sonido potente y envolvente con voces nítidas y graves intensos",
+            "Música y pódcast desde Amazon Music, Spotify, Apple Music y más",
+            "Alexa integrada para preguntas, temporizadores y rutinas",
+            "Control de dispositivos de hogar digital por voz",
+            "Conexión wifi y Bluetooth"
+        ],
+        "isFeatured": true,
+        "isBestSeller": false
+    },
+    {
+        "id": "18",
+        "title": "Rowenta Pure Pop DR2024 - Plancha de Vapor Vertical de 1300 W, Salida de Vapor hasta 20 g/min, Cabezal Reversible Quitapelusas, Diseño de Viaje",
+        "description": "Plancha de vapor vertical de 1300 W con salida de hasta 20 g/min. Plancha y purifica las prendas, elimina pelusas y pelo con su cabezal reversible. Ideal para viaje.",
+        "price": 32.99,
+        "originalPrice": 49.99,
+        "rating": 4.3,
+        "reviewCount": 5059,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/619-6t48fiL._AC_SL1500_.jpg",
+        "asin": "B0BY93HZHR",
+        "features": [
+            "Potencia de 1300 W con salida de vapor de hasta 20 g/min",
+            "Cabezal reversible: lado microfibra quitapelusas y lado terciopelo antiarrugas",
+            "Seguro para todo tipo de tejidos, incluso los delicados",
+            "Plancha en vertical y purifica las prendas",
+            "Diseño compacto ideal para viaje"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "19",
+        "title": "VACTechPro Aspiradora sin Cable 35kPa, Aspirador Escoba 6 en 1 Inalámbrico, 35 min de Autonomía con Batería Extraíble, Ideal para Pelo de Mascota",
+        "description": "Aspiradora sin cable 6 en 1 con potencia de succión de 35 kPa y hasta 35 minutos de autonomía. Batería extraíble. Ideal para pelo de mascotas, alfombras y suelos duros.",
+        "price": 109.00,
+        "originalPrice": 159.00,
+        "rating": 4.4,
+        "reviewCount": 5313,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/61mMhLs15XL._AC_SL1500_.jpg",
+        "asin": "B0D1KCLVPX",
+        "features": [
+            "Potente succión de 35 kPa con motor de alto rendimiento",
+            "Diseño 6 en 1 ligero y compacto para zonas de difícil acceso",
+            "Hasta 35 minutos de autonomía con batería extraíble y recargable",
+            "Ideal para pelo de mascotas, alfombras y suelos duros",
+            "Protección del suelo contra arañazos"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "20",
+        "title": "Utopia Bedding Juego de Sábanas 4 Piezas (Cama 150x200), Poliéster Microfibra Cepillada, Certificación Oeko-Tex, Bajera, Encimera y 2 Fundas de Almohada, Gris",
+        "description": "Juego de sábanas de 4 piezas para cama de 150x200 cm en poliéster microfibra cepillada. Incluye bajera, encimera y 2 fundas de almohada. Certificación Oeko-Tex.",
+        "price": 19.99,
+        "rating": 4.5,
+        "reviewCount": 60159,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/71z3R6tuiVL._AC_SL1500_.jpg",
+        "asin": "B075JJRFVV",
+        "features": [
+            "Juego de 4 piezas: sábana encimera, bajera ajustable y 2 fundas de almohada",
+            "Poliéster microfibra cepillada, suave y cómoda todo el año",
+            "Sábana bajera con elástico total y bolsillo de 35 cm de profundidad",
+            "Certificación Oeko-Tex (libre de sustancias nocivas)",
+            "Fácil cuidado y resistente al lavado"
         ],
         "isFeatured": false,
         "isBestSeller": false
