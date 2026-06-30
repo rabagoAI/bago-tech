@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { SITE_URL } from '@/config/site'
 
 const SITE_NAME = 'BagoTech'
 const DEFAULT_DESCRIPTION =
@@ -20,12 +21,12 @@ export const SEO = ({ title, description, canonical, noindex }: SEOProps) => {
             <title>{fullTitle}</title>
             <meta name="description" content={desc} />
             {noindex && <meta name="robots" content="noindex,nofollow" />}
-            {canonical && <link rel="canonical" href={`https://bagotech.com${canonical}`} />}
+            {canonical && <link rel="canonical" href={`${SITE_URL}${canonical}`} />}
 
             <meta property="og:title" content={fullTitle} />
             <meta property="og:description" content={desc} />
             <meta property="og:site_name" content={SITE_NAME} />
-            {canonical && <meta property="og:url" content={`https://bagotech.com${canonical}`} />}
+            {canonical && <meta property="og:url" content={`${SITE_URL}${canonical}`} />}
 
             <meta name="twitter:title" content={fullTitle} />
             <meta name="twitter:description" content={desc} />

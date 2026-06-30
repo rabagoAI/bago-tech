@@ -50,14 +50,32 @@ src/
 ├── pages/
 │   ├── Home.tsx          # Hero, stats, destacados, más vendidos, categorías
 │   ├── Products.tsx      # Catálogo completo con filtros y autocompletado
+│   ├── ProductDetail.tsx # Ficha individual (/producto/:id): features, CTA, relacionados, JSON-LD
 │   ├── Favorites.tsx     # Productos guardados (localStorage)
 │   └── Legal.tsx         # Aviso de afiliado, privacidad, cookies
+├── config/
+│   └── site.ts           # SITE_URL: fuente única del dominio (canonical, OG, JSON-LD)
 ├── router/index.tsx      # Definición de rutas
 ├── types/index.ts        # Interfaces TypeScript compartidas
 └── utils/
     ├── affiliateLinks.ts # Generador de URLs de afiliado Amazon
     └── analytics.ts      # Eventos GA4
+
+scripts/
+└── generate-sitemap.mjs  # Genera public/sitemap.xml desde products.json (corre en "prebuild")
+
+public/
+├── robots.txt            # Permite rastreo + apunta al sitemap
+└── sitemap.xml           # Generado automáticamente (no editar a mano)
 ```
+
+## Dominio y SEO
+
+- **Dominio de producción actual:** `https://bago-tech.vercel.app` (provisional; se comprará un dominio propio si hay tráfico).
+- **URL centralizada** en `src/config/site.ts` (`SITE_URL`). Al cambiar de dominio, actualizar en **4 sitios**: `src/config/site.ts`, `scripts/generate-sitemap.mjs`, `public/robots.txt` e `index.html`.
+- **Sitemap:** se regenera solo en cada `npm run build` (script `prebuild`), también en Vercel. Incluye home, /productos, /legal y una entrada por producto.
+- **Datos estructurados (JSON-LD):** `Organization` + `WebSite` (en `index.html`), `Product` (estrellas/precio) y `BreadcrumbList` (en `ProductDetail.tsx`). Se inyectan vía react-helmet (renderizado en cliente).
+- **Pendiente SEO:** falta `public/og-image.jpg` (referenciada en `index.html` pero no existe). Registrar la web en Google Search Console y enviar el sitemap.
 
 ## Variables de entorno
 
@@ -174,8 +192,8 @@ Existe una skill propia en `.claude/skills/add-product/SKILL.md` que automatiza 
 
 ## Automatizar la subida de productos con "Claude para Chrome" (pendiente)
 
-> **Estado:** pendiente de activar. Requiere instalar la extensión "Claude para Chrome".
-> Cuando esté conectada, la skill `/add-product` pasa sola al modo automático.
+> **Estado:** ✅ ACTIVA. La extensión "Claude para Chrome" ya está instalada y conectada.
+> La skill `/add-product` funciona en modo automático: Claude navega Amazon y extrae los datos solo.
 
 El objetivo es que, para añadir un producto, el usuario solo tenga que pasar **la URL de Amazon** (o varias) y Claude haga el resto automáticamente, sin copiar precio/imagen/valoraciones a mano.
 
@@ -196,3 +214,25 @@ El objetivo es que, para añadir un producto, el usuario solo tenga que pasar **
 
 ### Alternativa futura (Nivel 3)
 Cuando la cuenta de afiliado esté consolidada (tras 3 ventas cualificadas), se puede usar la **Amazon Product Advertising API (PA-API)** para obtener todos los datos del producto a partir del ASIN de forma 100% automática, sin navegador.
+
+---
+
+## Estado del proyecto (última sesión: 2026-06-30)
+
+### Hecho
+- **Tag de afiliado** unificado a `bagotech-21` (cuenta de Francisco García) en código, `.env` y Vercel.
+- **Catálogo limpio:** eliminados los productos demo con ASIN falsos. Hay **14 productos reales** (ids 1, 2, 9–20).
+- **Skill `/add-product`** creada y funcionando en modo automático con Claude para Chrome.
+- **Página de detalle** (`/producto/:id`) con features, CTA, relacionados y JSON-LD. Las cards navegan a ella.
+- **SEO:** sitemap automático, robots.txt, datos estructurados y dominio centralizado en `src/config/site.ts`.
+
+### Próximos pasos (ideas, sin empezar)
+1. **Crear `public/og-image.jpg`** (imagen para compartir en redes; ya está referenciada en `index.html`).
+2. **Google Search Console:** registrar `bago-tech.vercel.app` y enviar el sitemap.
+3. **Analítica + tracking de clics:** activar GA4 (`VITE_GA4_MEASUREMENT_ID`) para medir visitas y clics a Amazon.
+4. **Mejoras UI/UX:** sección de ofertas, más filtros, rendimiento de imágenes.
+5. **(Futuro)** Comprar dominio propio si hay tráfico → cambiar `SITE_URL` en los 4 sitios indicados.
+6. **(Futuro)** Prerender/SSR para que los datos estructurados no dependan de JS.
+
+### Objetivo de negocio
+Conseguir las **3 ventas cualificadas** (en 180 días) que validan la cuenta de afiliado, o Amazon la cierra por inactividad (ya pasó una vez).

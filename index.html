@@ -12,14 +12,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bagotech.com/" />
+    <meta property="og:url" content="https://bago-tech.vercel.app/" />
     <meta property="og:title" content="BagoTech - Mejores Productos Tech en Amazon" />
     <meta property="og:description" content="Descubre los mejores productos tech en Amazon con ofertas exclusivas" />
     <meta property="og:image" content="/og-image.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://bagotech.com/" />
+    <meta property="twitter:url" content="https://bago-tech.vercel.app/" />
     <meta property="twitter:title" content="BagoTech - Mejores Productos Tech en Amazon" />
     <meta property="twitter:description" content="Descubre los mejores productos tech en Amazon con ofertas exclusivas" />
     <meta property="twitter:image" content="/og-image.jpg" />
@@ -30,6 +30,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <title>BagoTech - Mejores Productos Tech en Amazon</title>
+
+    <!-- Datos estructurados: Organización y sitio web -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://bago-tech.vercel.app/#organization",
+            "name": "BagoTech",
+            "url": "https://bago-tech.vercel.app/",
+            "description": "Recomendaciones curadas de los mejores productos en Amazon."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://bago-tech.vercel.app/#website",
+            "url": "https://bago-tech.vercel.app/",
+            "name": "BagoTech",
+            "publisher": { "@id": "https://bago-tech.vercel.app/#organization" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://bago-tech.vercel.app/productos?search={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

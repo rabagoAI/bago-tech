@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Star, ShoppingCart, TrendingUp, Heart, Share2, Check } from 'lucide-react'
 import { Card } from './ui/Card'
 import { Button } from './ui/Button'
@@ -19,9 +20,15 @@ export const ProductCard = ({ product, onClick }: ProductCardProps) => {
     const [isHovered, setIsHovered] = useState(false)
     const [copied, setCopied] = useState(false)
 
+    const navigate = useNavigate()
     const { isFavorite, toggleFavorite, addToRecent } = useAppContext()
     const { showToast } = useToast()
     const favorited = isFavorite(product.id)
+
+    const handleCardClick = () => {
+        onClick?.()
+        navigate(`/producto/${product.id}`)
+    }
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         const card = cardRef.current
@@ -93,7 +100,7 @@ export const ProductCard = ({ product, onClick }: ProductCardProps) => {
             <Card
                 hover
                 className="group relative overflow-hidden animate-fade-in h-full"
-                onClick={onClick}
+                onClick={handleCardClick}
             >
                 {/* Top-left badges */}
                 <div className="absolute top-4 left-4 z-10 flex flex-col gap-2">

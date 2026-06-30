@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Páginas privadas / sin valor SEO
+Disallow: /favoritos
+
+Sitemap: https://bago-tech.vercel.app/sitemap.xml
