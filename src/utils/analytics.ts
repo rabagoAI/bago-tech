@@ -49,7 +49,8 @@ export const initGA4 = (): void => {
 export const trackEvent = ({ eventName, eventParams }: AnalyticsEvent): void => {
     if (window.gtag) {
         window.gtag('event', eventName, eventParams)
-    } else {
+    } else if (import.meta.env.DEV) {
+        // Sin GA cargado (p. ej. sin consentimiento): log solo en desarrollo.
         console.log('Analytics event:', eventName, eventParams)
     }
 }
