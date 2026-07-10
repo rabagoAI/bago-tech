@@ -47,7 +47,7 @@ export const ProductCard = ({ product, onClick }: ProductCardProps) => {
     const handleAmazonClick = (e: React.MouseEvent) => {
         e.stopPropagation()
         addToRecent(product.id)
-        trackAffiliateClick(product.id, product.title)
+        trackAffiliateClick(product)
         showToast({
             message: 'Abriendo en Amazon...',
             submessage: product.title.length > 48 ? product.title.slice(0, 48) + '…' : product.title,

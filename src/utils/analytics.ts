@@ -14,9 +14,16 @@ export const initGA4 = (): void => {
     const measurementId = import.meta.env.VITE_GA4_MEASUREMENT_ID
 
     if (!measurementId) {
-        console.warn('GA4 Measurement ID no configurado')
+        if (import.meta.env.DEV) {
+            console.info(
+                '[analytics] GA4 sin configurar (VITE_GA4_MEASUREMENT_ID). Los eventos solo se registran en consola.'
+            )
+        }
         return
     }
+
+    // Evitar doble inicialización
+    if (window.gtag) return
 
     // Cargar script de GA4
     const script = document.createElement('script')
@@ -25,13 +32,15 @@ export const initGA4 = (): void => {
     document.head.appendChild(script)
 
     // Inicializar gtag
+    window.dataLayer = window.dataLayer || []
     window.gtag = function (...args: any[]) {
-        window.dataLayer = window.dataLayer || []
-        window.dataLayer.push(args)
+        window.dataLayer!.push(args)
     }
 
     window.gtag('js', new Date())
-    window.gtag('config', measurementId)
+    // send_page_view: false → las vistas las envía useAnalytics en cada cambio de
+    // ruta, evitando el doble conteo de la primera página en esta SPA.
+    window.gtag('config', measurementId, { send_page_view: false })
 }
 
 /**
@@ -59,14 +68,23 @@ export const trackPageView = (path: string, title: string): void => {
 }
 
 /**
- * Rastrea un clic en un enlace de afiliado
+ * Rastrea un clic en un enlace de afiliado.
+ * Incluye value (precio) y currency para poder medir el valor potencial de cada
+ * clic en GA4, además de la categoría del producto.
  */
-export const trackAffiliateClick = (productId: string, productName: string): void => {
+export const trackAffiliateClick = (product: {
+    id: string
+    title: string
+    price?: number
+    category?: string
+}): void => {
     trackEvent({
         eventName: 'affiliate_click',
         eventParams: {
-            product_id: productId,
-            product_name: productName,
+            product_id: product.id,
+            product_name: product.title,
+            ...(product.category ? { item_category: product.category } : {}),
+            ...(product.price != null ? { value: product.price, currency: 'EUR' } : {}),
         },
     })
 }
