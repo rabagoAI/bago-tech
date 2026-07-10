@@ -203,7 +203,7 @@
             "Interruptor general de encendido/apagado",
             "Diseño vertical en torre con cable de 2 metros"
         ],
-        "isFeatured": true,
+        "isFeatured": false,
         "isBestSeller": false
     },
     {
@@ -287,6 +287,68 @@
             "Fácil cuidado y resistente al lavado"
         ],
         "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "21",
+        "title": "SanDisk Extreme SSD Externo Portátil 1TB, hasta 1050 MB/s de Lectura, Resistente al Agua y Polvo (IP65), USB-C",
+        "description": "Disco SSD externo portátil de 1TB con velocidades de hasta 1050 MB/s de lectura y 1000 MB/s de escritura. Resistente al agua y al polvo (IP65) y a caídas.",
+        "price": 159.95,
+        "rating": 4.7,
+        "reviewCount": 80045,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/717QYwBEEIL._AC_SL1500_.jpg",
+        "asin": "B08GTYFC37",
+        "features": [
+            "Velocidades de hasta 1050 MB/s de lectura y 1000 MB/s de escritura (NVMe)",
+            "Protección IP65 contra agua y polvo, y resistente a caídas",
+            "Cifrado por hardware AES de 256 bits para proteger tus archivos",
+            "Funda de silicona resistente incluida",
+            "Conexión USB-C, capacidad de 1TB y 5 años de garantía"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "22",
+        "title": "TP-Link RE330 Repetidor WiFi AC1200, Amplificador de Cobertura hasta 120 m², Puerto Ethernet, Compatible con EasyMesh",
+        "description": "Repetidor y amplificador WiFi de doble banda AC1200 que extiende la cobertura hasta 120 m². Con puerto Ethernet, botón WPS y compatible con EasyMesh y cualquier router.",
+        "price": 32.99,
+        "originalPrice": 34.99,
+        "rating": 4.3,
+        "reviewCount": 22000,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/41-UwuabaUL._AC_SL1000_.jpg",
+        "asin": "B08X19VZN8",
+        "features": [
+            "Doble banda AC1200: 2,4 GHz (300 Mbps) y 5 GHz (867 Mbps)",
+            "Amplía la cobertura WiFi hasta 120 m² y elimina zonas muertas",
+            "Compatible con EasyMesh y con cualquier router o box de internet",
+            "Puerto Ethernet para conectar dispositivos por cable",
+            "Configuración sencilla con botón WPS y app Tether"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "23",
+        "title": "SanDisk Ultra Pendrive 128GB, Memoria Flash USB 3.0 hasta 130 MB/s, con Software SecureAccess y Protección por Contraseña",
+        "description": "Memoria USB de 128GB con USB 3.0 y velocidades de hasta 130 MB/s. Incluye software SecureAccess para proteger tus archivos con contraseña y cifrado.",
+        "price": 17.94,
+        "originalPrice": 28.99,
+        "rating": 4.6,
+        "reviewCount": 186814,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/61T85CGI4ZL._AC_SL1500_.jpg",
+        "asin": "B00P8XQPY4",
+        "features": [
+            "Capacidad de 128GB con conexión USB 3.0",
+            "Velocidad de lectura de hasta 130 MB/s (hasta 10x más rápido que USB 2.0)",
+            "Transfiere una película completa en menos de 40 segundos",
+            "Software SanDisk SecureAccess: cifrado y protección por contraseña",
+            "Compatible con Windows y Mac (retrocompatible con USB 2.0)"
+        ],
+        "isFeatured": true,
         "isBestSeller": false
     }
 ]
