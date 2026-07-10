@@ -2,11 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import { initGA4 } from './utils/analytics'
+import { getConsent } from './utils/consent'
 import './styles/index.css'
 
-// Inicializar GA4 antes de renderizar, para que window.gtag exista antes de
-// que los efectos de los componentes disparen el primer trackPageView.
-initGA4()
+// Cargar GA4 solo si el usuario ya aceptó las cookies en una visita anterior
+// (RGPD). Si acepta ahora, el banner llama a initGA4() al pulsar "Aceptar".
+if (getConsent() === 'granted') {
+    initGA4()
+}
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>

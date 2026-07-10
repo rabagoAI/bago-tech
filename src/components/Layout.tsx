@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { ToastContainer } from './ToastContainer'
+import { CookieConsent } from './CookieConsent'
 import { useAnalytics } from '@/hooks/useAnalytics'
 
 const pageVariants = {
@@ -39,6 +40,7 @@ export const Layout = () => {
             </main>
             <Footer />
             <ToastContainer />
+            <CookieConsent />
         </div>
     )
 }

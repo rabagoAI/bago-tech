@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Heart, Mail } from 'lucide-react'
+import { openCookieSettings } from '@/utils/consent'
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear()
@@ -44,6 +45,14 @@ export const Footer = () => {
                                 >
                                     Aviso Legal
                                 </Link>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={openCookieSettings}
+                                    className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+                                >
+                                    Configurar cookies
+                                </button>
                             </li>
                         </ul>
                     </div>
