@@ -217,25 +217,26 @@ Cuando la cuenta de afiliado esté consolidada (tras 3 ventas cualificadas), se 
 
 ---
 
-## Estado del proyecto (última sesión: 2026-07-10)
+## Estado del proyecto (última sesión: 2026-07-23)
 
 ### Hecho
 - **Tag de afiliado** unificado a `bagotech-21` (cuenta de Francisco García) en código, `.env` y Vercel. La cuenta se había cerrado por inactividad y se reactivó.
-- **Catálogo:** **17 productos reales** (ids 1, 2, 9–23). Reparto: Tecnología (9), Hogar (4), Accesorios (4). Eliminados los demo con ASIN falsos.
+- **Catálogo:** **20 productos reales** (ids 1, 2, 9–26). Reparto: Tecnología (10), Hogar (4), Accesorios (6). Eliminados los demo con ASIN falsos.
 - **Skill `/add-product`** funcionando en modo automático con Claude para Chrome (extrae precio/imagen/valoraciones/features del DOM de Amazon).
 - **Página de detalle** (`/producto/:id`) con features, CTA, relacionados y JSON-LD. Las cards navegan a ella.
 - **SEO:** sitemap automático, robots.txt, datos estructurados (Product/BreadcrumbList/Organization) y dominio centralizado en `src/config/site.ts` (`https://bago-tech.vercel.app`).
 - **Google Analytics 4 activado:** propiedad creada (ID `G-S0QKPXFK1F`, variable en Vercel para Production). Init temprano en `main.tsx`, sin doble conteo (`send_page_view:false`), y evento `affiliate_click` con `value` (precio) y categoría. Eventos: `page_view`, `view_item`, `affiliate_click`.
 - **Banner de cookies (RGPD):** `src/components/CookieConsent.tsx` + `src/utils/consent.ts`. GA **solo carga tras aceptar**. Enlace "Configurar cookies" en el footer para cambiar la decisión.
+- **Imagen Open Graph:** `public/og-image.jpg` (1200x630, generada con el logo real de la marca). `index.html` usa URLs absolutas para `og:image`/`twitter:image` (requisito del protocolo).
+- **Sección de Ofertas + filtros:** nueva sección "Ofertas Especiales" en Home (4 mayores descuentos) y enlace "Ofertas" en el header (`/productos?sale=1`). Se arregló un bug donde `?sale=1` no se leía al cargar la URL. Se expusieron en la UI los filtros de precio (5 rangos) y valoración mínima que ya existían en `useProducts`.
 
 ### Próximos pasos (ideas, sin empezar)
-1. **Crear `public/og-image.jpg`** (imagen para compartir en redes; ya está referenciada en `index.html`).
-2. **Google Search Console:** registrar `bago-tech.vercel.app` y enviar el sitemap.
-3. **Afinar la página Legal** (`src/pages/Legal.tsx`) para mencionar explícitamente Google Analytics y el tratamiento de datos (el banner de cookies enlaza ahí).
-4. **Mejoras UI/UX:** sección de ofertas, más filtros (precio/valoración), optimización de imágenes.
-5. **Verificar GA en producción:** confirmar eventos en Tiempo real/DebugView desde un navegador sin bloqueadores (los adblockers ocultan tráfico propio).
-6. **(Futuro)** Comprar dominio propio si hay tráfico → cambiar `SITE_URL` en los 4 sitios indicados.
-7. **(Futuro)** Prerender/SSR para que los datos estructurados no dependan de JS.
+1. **Google Search Console:** registrar `bago-tech.vercel.app` y enviar el sitemap.
+2. **Afinar la página Legal** (`src/pages/Legal.tsx`) para mencionar explícitamente Google Analytics y el tratamiento de datos (el banner de cookies enlaza ahí).
+3. **Optimización de imágenes:** lazy loading, tamaños, evitar saltos de layout (CLS) en las imágenes de producto.
+4. **Verificar GA en producción:** confirmar eventos en Tiempo real/DebugView desde un navegador sin bloqueadores (los adblockers ocultan tráfico propio).
+5. **(Futuro)** Comprar dominio propio si hay tráfico → cambiar `SITE_URL` en los 4 sitios indicados.
+6. **(Futuro)** Prerender/SSR para que los datos estructurados no dependan de JS.
 
 ### Objetivo de negocio
 Conseguir las **3 ventas cualificadas** (en 180 días) que validan la cuenta de afiliado, o Amazon la cierra por inactividad (ya pasó una vez).
