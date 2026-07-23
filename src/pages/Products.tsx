@@ -9,6 +9,22 @@ import type { FilterOptions } from '@/types'
 
 const CATEGORIES = ['all', 'Tecnología', 'Hogar', 'Accesorios']
 
+const DEFAULT_PRICE_RANGE = { minPrice: 0, maxPrice: 1000 }
+
+const PRICE_RANGES = [
+    { label: 'Todos los precios', minPrice: 0, maxPrice: 1000 },
+    { label: 'Menos de 25€', minPrice: 0, maxPrice: 25 },
+    { label: '25€ - 50€', minPrice: 25, maxPrice: 50 },
+    { label: '50€ - 100€', minPrice: 50, maxPrice: 100 },
+    { label: 'Más de 100€', minPrice: 100, maxPrice: 1000 },
+]
+
+const RATING_OPTIONS = [
+    { label: 'Cualquier valoración', minRating: 0 },
+    { label: '4★ o más', minRating: 4 },
+    { label: '4.5★ o más', minRating: 4.5 },
+]
+
 export const Products = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [showFilters, setShowFilters] = useState(false)
@@ -20,7 +36,7 @@ export const Products = () => {
         maxPrice: 1000,
         minRating: 0,
         sortBy: 'popular',
-        onlyOnSale: false,
+        onlyOnSale: searchParams.get('sale') === '1',
     })
 
     const { products, allProducts, loading } = useProducts(filters)
@@ -70,10 +86,15 @@ export const Products = () => {
 
     const set = (patch: Partial<FilterOptions>) => setFilters((f) => ({ ...f, ...patch }))
 
+    const isDefaultPriceRange =
+        (filters.minPrice ?? 0) === DEFAULT_PRICE_RANGE.minPrice &&
+        (filters.maxPrice ?? 1000) === DEFAULT_PRICE_RANGE.maxPrice
+
     const activeFilterCount = [
         filters.category !== 'all',
         filters.onlyOnSale,
         (filters.minRating ?? 0) > 0,
+        !isDefaultPriceRange,
     ].filter(Boolean).length
 
     return (
@@ -131,32 +152,51 @@ export const Products = () => {
                     </button>
                 </div>
 
-                {/* Row 2: Categories + Sale toggle — desktop always visible, mobile animated */}
-                {/* Desktop */}
+                {/* Row 2: Categorías — desktop siempre visible, mobile animada */}
                 <div className="hidden md:flex flex-wrap items-center gap-2">
-                    <FilterRow
+                    <CategoryRow
                         categories={CATEGORIES}
                         selected={filters.category || 'all'}
                         onCategory={(c) => set({ category: c })}
+                    />
+                </div>
+
+                {/* Row 3: Precio + Valoración + Solo en oferta */}
+                <div className="hidden md:flex flex-wrap items-center gap-2">
+                    <SecondaryFilters
+                        minPrice={filters.minPrice ?? 0}
+                        maxPrice={filters.maxPrice ?? 1000}
+                        onPriceRange={(minPrice, maxPrice) => set({ minPrice, maxPrice })}
+                        minRating={filters.minRating ?? 0}
+                        onRating={(minRating) => set({ minRating })}
                         onlyOnSale={filters.onlyOnSale || false}
                         onToggleSale={() => set({ onlyOnSale: !filters.onlyOnSale })}
                     />
                 </div>
 
-                {/* Mobile: accordion */}
+                {/* Mobile: accordion con todos los filtros */}
                 <div
                     className="md:hidden overflow-hidden"
                     style={{
-                        maxHeight: showFilters ? '200px' : '0',
+                        maxHeight: showFilters ? '500px' : '0',
                         opacity: showFilters ? 1 : 0,
                         transition: 'max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s ease',
                     }}
                 >
                     <div className="flex flex-wrap items-center gap-2 pt-2">
-                        <FilterRow
+                        <CategoryRow
                             categories={CATEGORIES}
                             selected={filters.category || 'all'}
                             onCategory={(c) => set({ category: c })}
+                        />
+                    </div>
+                    <div className="flex flex-wrap items-center gap-2 pt-2">
+                        <SecondaryFilters
+                            minPrice={filters.minPrice ?? 0}
+                            maxPrice={filters.maxPrice ?? 1000}
+                            onPriceRange={(minPrice, maxPrice) => set({ minPrice, maxPrice })}
+                            minRating={filters.minRating ?? 0}
+                            onRating={(minRating) => set({ minRating })}
                             onlyOnSale={filters.onlyOnSale || false}
                             onToggleSale={() => set({ onlyOnSale: !filters.onlyOnSale })}
                         />
@@ -178,7 +218,15 @@ export const Products = () => {
                 </p>
                 {activeFilterCount > 0 && (
                     <button
-                        onClick={() => set({ category: 'all', onlyOnSale: false, minRating: 0, searchQuery: '' })}
+                        onClick={() =>
+                            set({
+                                category: 'all',
+                                onlyOnSale: false,
+                                minRating: 0,
+                                searchQuery: '',
+                                ...DEFAULT_PRICE_RANGE,
+                            })
+                        }
                         className="text-primary-600 dark:text-primary-400 hover:underline font-medium"
                     >
                         Limpiar filtros
@@ -192,16 +240,14 @@ export const Products = () => {
     )
 }
 
-/* ── Sub-component: pills de filtros ─────────────────────────── */
-interface FilterRowProps {
+/* ── Sub-component: pills de categoría ───────────────────────── */
+interface CategoryRowProps {
     categories: string[]
     selected: string
     onCategory: (c: string) => void
-    onlyOnSale: boolean
-    onToggleSale: () => void
 }
 
-const FilterRow = ({ categories, selected, onCategory, onlyOnSale, onToggleSale }: FilterRowProps) => (
+const CategoryRow = ({ categories, selected, onCategory }: CategoryRowProps) => (
     <>
         {categories.map((category) => (
             <button
@@ -216,6 +262,56 @@ const FilterRow = ({ categories, selected, onCategory, onlyOnSale, onToggleSale 
                 {category === 'all' ? 'Todas' : category}
             </button>
         ))}
+    </>
+)
+
+/* ── Sub-component: precio, valoración y oferta ──────────────── */
+interface SecondaryFiltersProps {
+    minPrice: number
+    maxPrice: number
+    onPriceRange: (minPrice: number, maxPrice: number) => void
+    minRating: number
+    onRating: (minRating: number) => void
+    onlyOnSale: boolean
+    onToggleSale: () => void
+}
+
+const SecondaryFilters = ({
+    minPrice,
+    maxPrice,
+    onPriceRange,
+    minRating,
+    onRating,
+    onlyOnSale,
+    onToggleSale,
+}: SecondaryFiltersProps) => (
+    <>
+        <select
+            value={`${minPrice}-${maxPrice}`}
+            onChange={(e) => {
+                const range = PRICE_RANGES.find((r) => `${r.minPrice}-${r.maxPrice}` === e.target.value)
+                if (range) onPriceRange(range.minPrice, range.maxPrice)
+            }}
+            className="px-3 py-2 rounded-lg text-sm font-medium border border-gray-300 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+        >
+            {PRICE_RANGES.map((r) => (
+                <option key={r.label} value={`${r.minPrice}-${r.maxPrice}`}>
+                    {r.label}
+                </option>
+            ))}
+        </select>
+
+        <select
+            value={minRating}
+            onChange={(e) => onRating(Number(e.target.value))}
+            className="px-3 py-2 rounded-lg text-sm font-medium border border-gray-300 dark:border-gray-600 bg-white dark:bg-slate-800 text-gray-700 dark:text-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+        >
+            {RATING_OPTIONS.map((r) => (
+                <option key={r.label} value={r.minRating}>
+                    {r.label}
+                </option>
+            ))}
+        </select>
 
         {/* Separator */}
         <div className="h-6 w-px bg-gray-200 dark:bg-gray-700 mx-1 hidden md:block" />

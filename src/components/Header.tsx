@@ -11,11 +11,16 @@ export const Header = () => {
     const navigation = [
         { name: 'Inicio', href: '/' },
         { name: 'Productos', href: '/productos' },
+        { name: 'Ofertas', href: '/productos?sale=1' },
         { name: 'Legal', href: '/legal' },
     ]
 
     const isActive = (href: string) =>
-        href === '/' ? location.pathname === '/' : location.pathname.startsWith(href)
+        href === '/'
+            ? location.pathname === '/'
+            : href.includes('?')
+              ? location.pathname + location.search === href
+              : location.pathname.startsWith(href) && location.search === ''
 
     return (
         <header className="sticky top-0 z-40 glass-effect border-b border-white/20 dark:border-slate-700/50">

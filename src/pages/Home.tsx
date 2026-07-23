@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, TrendingUp, Sparkles, Zap, Shield, Star, Clock } from 'lucide-react'
+import { ArrowRight, TrendingUp, Sparkles, Zap, Shield, Star, Clock, Tag } from 'lucide-react'
 import { useProducts } from '@/hooks/useProducts'
 import { useScrollReveal } from '@/hooks/useScrollReveal'
 import { useAppContext } from '@/context/AppContext'
@@ -8,6 +8,7 @@ import { ProductGrid } from '@/components/ProductGrid'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
 import { SEO } from '@/components/SEO'
+import { calculateDiscount } from '@/utils/affiliateLinks'
 
 const ROTATING_WORDS = ['Tecnología', 'Innovación', 'Calidad', 'Ofertas']
 
@@ -75,6 +76,10 @@ export const Home = () => {
 
     const featuredProducts = products.filter((p) => p.isFeatured).slice(0, 4)
     const bestSellers = products.filter((p) => p.isBestSeller).slice(0, 4)
+    const dealProducts = products
+        .filter((p) => p.originalPrice && p.originalPrice > p.price)
+        .sort((a, b) => calculateDiscount(b.originalPrice!, b.price) - calculateDiscount(a.originalPrice!, a.price))
+        .slice(0, 4)
     const recentProducts = recentIds
         .map((id) => products.find((p) => p.id === id))
         .filter(Boolean) as typeof products
@@ -97,6 +102,7 @@ export const Home = () => {
     // Scroll reveal refs
     const heroReveal = useScrollReveal(0)
     const featuredReveal = useScrollReveal()
+    const dealsReveal = useScrollReveal()
     const bestSellersReveal = useScrollReveal()
     const categoriesReveal = useScrollReveal()
     const statsReveal = useScrollReveal()
@@ -213,6 +219,35 @@ export const Home = () => {
                         </Link>
                     </div>
                     <ProductGrid products={featuredProducts} loading={loading} />
+                </section>
+            )}
+
+            {/* Ofertas Especiales */}
+            {dealProducts.length > 0 && (
+                <section
+                    ref={dealsReveal.ref}
+                    className={`reveal ${dealsReveal.isVisible ? 'visible' : ''}`}
+                >
+                    <div className="flex items-center justify-between mb-8">
+                        <div className="flex items-center gap-3">
+                            <Tag className="w-8 h-8 text-red-500" />
+                            <div>
+                                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                                    Ofertas Especiales
+                                </h2>
+                                <p className="text-gray-600 dark:text-gray-400">
+                                    Los mayores descuentos seleccionados para ti
+                                </p>
+                            </div>
+                        </div>
+                        <Link to="/productos?sale=1">
+                            <Button variant="outline">
+                                Ver Todas
+                                <ArrowRight className="ml-2 w-4 h-4" />
+                            </Button>
+                        </Link>
+                    </div>
+                    <ProductGrid products={dealProducts} loading={loading} />
                 </section>
             )}
 
