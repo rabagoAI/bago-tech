@@ -350,5 +350,66 @@
         ],
         "isFeatured": true,
         "isBestSeller": false
+    },
+    {
+        "id": "24",
+        "title": "Xiaomi Smartband 10, Pantalla AMOLED de 1,72\", Carga Rápida, 150+ Modos Deportivos, Monitorización de Salud y Sueño, HyperOS 2.0, Impermeable 5ATM, Brújula",
+        "description": "Pulsera de actividad con pantalla AMOLED de 1,72'', más de 150 modos deportivos, monitorización de salud y sueño, brújula electrónica y resistencia al agua 5ATM.",
+        "price": 36.90,
+        "originalPrice": 54.99,
+        "rating": 4.6,
+        "reviewCount": 11833,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/51bkPDf8dUL._AC_SL1000_.jpg",
+        "asin": "B0DYF82545",
+        "features": [
+            "Pantalla AMOLED de 1,72'' con bisel de 2 mm y brillo de hasta 1500 nits",
+            "Más de 150 modos deportivos con modo de natación avanzado y brújula electrónica",
+            "Monitorización de frecuencia cardíaca en tiempo real, incluso nadando",
+            "Gestión mejorada del sueño con orientación personalizada",
+            "HyperOS 2.0, resistencia al agua 5ATM y carga rápida"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "25",
+        "title": "Super Sparrow Botella de Agua Acero Inoxidable 750ml, Botella Térmica Sin BPA, con Tapa Pajita, para Deporte, Oficina, Yoga y Ciclismo",
+        "description": "Botella de agua térmica de acero inoxidable sin BPA, con tapa de pajita y tapón con asa. Ideal para deporte, oficina, yoga y desplazamientos diarios.",
+        "price": 16.20,
+        "rating": 4.6,
+        "reviewCount": 60425,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/71DQJ50rVGL._AC_SL1500_.jpg",
+        "asin": "B07DYLZW1R",
+        "features": [
+            "Acero inoxidable sin BPA, mantiene el sabor puro del agua",
+            "Tapa con pajita para beber fácilmente y tapón con asa para transportarla",
+            "Exterior con recubrimiento en polvo, resistente y de agarre cómodo",
+            "Apta para lavavajillas",
+            "Disponible en varias capacidades: 500ml, 750ml y 1L"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "26",
+        "title": "Beast Rage Guantes de Fitness para Levantamiento de Pesas, Transpirables y Antideslizantes, Acolchados de Silicona, para Gimnasio, Crossfit y Ciclismo",
+        "description": "Guantes de fitness transpirables con palma acolchada de silicona antideslizante. Ideales para levantamiento de pesas, crossfit, ciclismo y entrenamiento de fuerza.",
+        "price": 6.18,
+        "rating": 4.6,
+        "reviewCount": 3452,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/81nRBKT3JIL._AC_SL1500_.jpg",
+        "asin": "B0CPP19BMP",
+        "features": [
+            "Palma acolchada de silicona antideslizante para mejor adherencia",
+            "Diseño transpirable, unisex, para hombres y mujeres",
+            "Válidos para crossfit, ciclismo, levantamiento de pesas y entrenamiento de fuerza",
+            "Protección adicional durante el entrenamiento",
+            "Ajuste cómodo y duradero"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
     }
 ]
