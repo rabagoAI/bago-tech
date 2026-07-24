@@ -8,3 +8,10 @@ interface ImportMetaEnv {
 interface ImportMeta {
     readonly env: ImportMetaEnv
 }
+
+declare namespace React {
+    interface ImgHTMLAttributes<T> {
+        /** No tipado aún en esta versión de @types/react. Prioriza la descarga de la imagen LCP. */
+        fetchpriority?: 'high' | 'low' | 'auto'
+    }
+}

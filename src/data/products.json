@@ -411,5 +411,210 @@
         ],
         "isFeatured": false,
         "isBestSeller": false
+    },
+    {
+        "id": "27",
+        "title": "Cecotec Batidora de Mano Power Neutron 1100MAX Pro, 1100W, 4 Cuchillas de Titanio, Función Turbo, Vaso 800ml, Picadora y Varilla Montaclaras",
+        "description": "Batidora de mano de 1100W con cuchillas de titanio, velocidad ajustable y función turbo. Incluye vaso de 800ml, picadora y varilla montaclaras.",
+        "price": 32.90,
+        "rating": 4.4,
+        "reviewCount": 492,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/515ZhxyEvEL._AC_SL1000_.jpg",
+        "asin": "B0BQ1HT1HQ",
+        "features": [
+            "Motor de 1100W de potencia máxima",
+            "Cuchillas de titanio CrossBlades para triturar hasta alimentos duros",
+            "Selector de velocidad ajustable y función Turbo",
+            "Incluye vaso de 800ml, picadora y varilla montaclaras",
+            "Diseño ergonómico para un uso prolongado sin fatiga"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "28",
+        "title": "YARRAMATE Pulverizador de Aceite para Cocinar 2 en 1, Botella Dispensadora de Aceite de Oliva de Vidrio 470ml, para Freidora de Aire, Barbacoa",
+        "description": "Botella pulverizadora y dispensadora de aceite 2 en 1, de vidrio y 470ml. Ideal para aderezar, asar, hornear y usar con freidora de aire o barbacoa.",
+        "price": 10.99,
+        "rating": 4.3,
+        "reviewCount": 47039,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/71i2XJNQFML._AC_SL1500_.jpg",
+        "asin": "B0G6CM3G9G",
+        "features": [
+            "Función 2 en 1: rocía o vierte aceite según necesites",
+            "Vidrio grueso transparente para ver el nivel de aceite",
+            "Material libre de BPA y de grado alimenticio",
+            "Ideal para aderezar, asar, hornear y freidora de aire",
+            "Capacidad de 470ml"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "29",
+        "title": "HOVVIDA Tira LED RGB 10m, 300 LED, Control por App y Mando a Distancia, Modo Música con Micrófono, para Habitación, Dormitorio, Fiesta",
+        "description": "Tira LED RGB de 10 metros con 300 LEDs, 16 millones de colores, control por app y mando a distancia. Incluye modo música con micrófono integrado.",
+        "price": 11.99,
+        "rating": 3.9,
+        "reviewCount": 12373,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/81KSNTsjfiL._AC_SL1500_.jpg",
+        "asin": "B0GTL23TL7",
+        "features": [
+            "10 metros con 300 LEDs RGB (30 LED/metro) y 16 millones de colores",
+            "Control por app y mando a distancia incluido",
+            "Modo música con micrófono integrado: cambia de color al ritmo",
+            "Ideal para habitación, salón, cocina o fiestas",
+            "Alimentación 24V"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "30",
+        "title": "Gritin Luz de Lectura con Pinza Recargable, 7 LEDs y 3 Modos de Color, 5 Niveles de Brillo, Compacta y Portátil",
+        "description": "Lámpara de lectura con pinza, recargable por USB, con 7 LEDs, 3 modos de color y 5 niveles de brillo regulables. Compacta y portátil.",
+        "price": 8.56,
+        "originalPrice": 9.99,
+        "rating": 4.8,
+        "reviewCount": 10103,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/71R3nT8zAhL._AC_SL1500_.jpg",
+        "asin": "B0D7MD8BWW",
+        "features": [
+            "3 modos de iluminación: luz mixta, blanca y ámbar",
+            "5 niveles de brillo regulables con función de memoria",
+            "Recargable por USB con batería de 500mAh",
+            "Diseño compacto y portátil con pinza de sujeción",
+            "Hasta docenas de horas de autonomía"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "31",
+        "title": "Utopia Bedding Protector de Colchón 150x200x40cm Impermeable, Certificación Oeko-Tex, Transpirable, Elástico en Todo el Contorno",
+        "description": "Protector de colchón impermeable de 150x200x40cm con superficie de rizo transpirable y elástico en todo el contorno. Certificación Oeko-Tex.",
+        "price": 13.71,
+        "originalPrice": 16.99,
+        "rating": 4.6,
+        "reviewCount": 46774,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/81CwwEsQZOL._AC_SL1500_.jpg",
+        "asin": "B077T9VSNZ",
+        "features": [
+            "Superficie de rizo suave, transpirable y silenciosa",
+            "100% impermeable: protege contra líquidos y manchas",
+            "Elástico en todo el contorno, se ajusta perfectamente al colchón",
+            "Certificación Oeko-Tex (libre de sustancias nocivas)",
+            "Medidas: 150 x 200 x 40cm"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "32",
+        "title": "Toshiba Canvio Partner 2TB - Disco Duro Externo Portátil de 2,5'', USB 3.2, Compatible con Mac y Windows",
+        "description": "Disco duro externo portátil de 2TB con conexión USB 3.2 de alta velocidad. Diseño compacto, plug and play, compatible con Mac y Windows.",
+        "price": 111.99,
+        "originalPrice": 119.99,
+        "rating": 4.6,
+        "reviewCount": 12290,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/81hXbJ819UL._AC_SL1500_.jpg",
+        "asin": "B0BGXZRKQN",
+        "features": [
+            "Gran capacidad de almacenamiento: 2TB",
+            "Interfaz USB 3.2 con transferencia de datos de alta velocidad",
+            "Plug and play: no requiere software ni controladores",
+            "Diseño portátil y compacto",
+            "Compatible con Mac y Windows"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "33",
+        "title": "JBL Go 5, Altavoz Ultraportátil Bluetooth, Resistente al Agua (IP68), Sonido JBL Pro, hasta 10 Horas de Reproducción",
+        "description": "Altavoz Bluetooth ultraportátil con sonido JBL Pro, protección impermeable IP68 e iluminación de borde ambiental. Hasta 10 horas de reproducción.",
+        "price": 40.99,
+        "originalPrice": 49.99,
+        "rating": 4.7,
+        "reviewCount": 717,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/716VC4UUy0L._AC_SL1500_.jpg",
+        "asin": "B0GPQ5H2LM",
+        "features": [
+            "Sonido JBL Pro con graves ricos y detalles nítidos",
+            "Protección impermeable IP68",
+            "Iluminación de borde ambiental personalizable",
+            "Hasta 10 horas de reproducción (con Playtime Boost)",
+            "Diseño ultraportátil, cabe en la palma de la mano"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "34",
+        "title": "UGREEN Cable HDMI 2.1 8K, Certificado 8K@60Hz 4K@240Hz, 48Gbps, 2 Metros",
+        "description": "Cable HDMI 2.1 certificado, compatible con 8K@60Hz y 4K@240Hz, hasta 48Gbps de transferencia. Soporta eARC, Dolby Atmos y HDR dinámico.",
+        "price": 10.59,
+        "originalPrice": 14.99,
+        "rating": 4.8,
+        "reviewCount": 14277,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/71pZ6M5mRSL._SL1500_.jpg",
+        "asin": "B0CFFFSFFN",
+        "features": [
+            "Compatible con 8K@60Hz, 4K@240Hz y 48Gbps de transferencia",
+            "eARC: compatible con Dolby Atmos, Dolby TrueHD y DTS:X",
+            "Soporta HDR dinámico y estático",
+            "Compatible con VRR y ALLM para gaming",
+            "Longitud de 2 metros"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "35",
+        "title": "PHILIPS 24E1N1100A Monitor 24 Pulgadas, 120Hz, Panel IPS, Full HD, FreeSync, Altavoces Integrados",
+        "description": "Monitor de 24 pulgadas Full HD con panel IPS, 120Hz y FreeSync. Tecnología Flicker Free y Low Blue Light para reducir la fatiga ocular.",
+        "price": 78.95,
+        "rating": 4.6,
+        "reviewCount": 1761,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/41-DZtriA1L._AC_SL1152_.jpg",
+        "asin": "B0CX9CT3ZF",
+        "features": [
+            "Panel IPS Full HD (1920x1080) a 120Hz",
+            "Tecnología Flicker Free y Low Blue Light",
+            "Sincronización adaptativa FreeSync",
+            "Altavoces integrados y soporte compatible con Vesa 100x100",
+            "Pantalla mate de alto contraste (1.300:1)"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "36",
+        "title": "Amazon Fire TV Stick HD (Última Generación), con TV en Directo Gratuita, Mando por Voz Alexa, Wi-Fi 6",
+        "description": "Dispositivo de streaming en HD con navegación optimizada, mando por voz Alexa y compatibilidad con Wi-Fi 6. Configuración fácil y formato ultraportátil.",
+        "price": 49.99,
+        "rating": 4.2,
+        "reviewCount": 1730,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/61PBngXc0HL._AC_SL1500_.jpg",
+        "asin": "B0DJGCX6Q2",
+        "features": [
+            "Streaming en HD con navegación optimizada",
+            "Mando por voz con Alexa incluido",
+            "Compatible con Wi-Fi 6",
+            "Formato ultraportátil, fácil de llevar",
+            "Acceso a TV en directo gratuita"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
     }
 ]

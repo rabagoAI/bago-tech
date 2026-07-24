@@ -5,6 +5,7 @@ import { Card } from './ui/Card'
 import { Button } from './ui/Button'
 import type { Product } from '@/types'
 import { generateAmazonLink, formatPrice, calculateDiscount } from '@/utils/affiliateLinks'
+import { getResizedAmazonImage } from '@/utils/images'
 import { trackAffiliateClick } from '@/utils/analytics'
 import { useAppContext } from '@/context/AppContext'
 import { useToast } from '@/context/ToastContext'
@@ -153,10 +154,11 @@ export const ProductCard = ({ product, onClick }: ProductCardProps) => {
                 {/* Image */}
                 <div className="relative h-48 mb-4 overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
                     <img
-                        src={product.imageUrl}
+                        src={getResizedAmazonImage(product.imageUrl, 600)}
                         alt={product.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         loading="lazy"
+                        decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 </div>

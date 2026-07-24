@@ -19,6 +19,7 @@ import { ProductGrid } from '@/components/ProductGrid'
 import { Button } from '@/components/ui/Button'
 import { SEO } from '@/components/SEO'
 import { generateAmazonLink, formatPrice, calculateDiscount } from '@/utils/affiliateLinks'
+import { getResizedAmazonImage } from '@/utils/images'
 import { trackAffiliateClick, trackProductView } from '@/utils/analytics'
 import { SITE_URL } from '@/config/site'
 
@@ -217,11 +218,15 @@ export const ProductDetail = () => {
                                 </span>
                             )}
                         </div>
-                        <img
-                            src={product.imageUrl}
-                            alt={product.title}
-                            className="w-full h-auto max-h-[480px] object-contain mx-auto"
-                        />
+                        <div className="aspect-square max-h-[480px] mx-auto">
+                            <img
+                                src={getResizedAmazonImage(product.imageUrl, 1000)}
+                                alt={product.title}
+                                className="w-full h-full object-contain"
+                                decoding="async"
+                                fetchpriority="high"
+                            />
+                        </div>
                     </div>
                 </div>
 
