@@ -217,11 +217,11 @@ Cuando la cuenta de afiliado esté consolidada (tras 3 ventas cualificadas), se 
 
 ---
 
-## Estado del proyecto (última sesión: 2026-07-23)
+## Estado del proyecto (última sesión: 2026-08-11)
 
 ### Hecho
 - **Tag de afiliado** unificado a `bagotech-21` (cuenta de Francisco García) en código, `.env` y Vercel. La cuenta se había cerrado por inactividad y se reactivó.
-- **Catálogo:** **20 productos reales** (ids 1, 2, 9–26). Reparto: Tecnología (10), Hogar (4), Accesorios (6). Eliminados los demo con ASIN falsos.
+- **Catálogo:** **30 productos reales** (ids 1, 2, 9–36). Reparto equilibrado: Tecnología (12), Hogar (9), Accesorios (9). Eliminados los demo con ASIN falsos.
 - **Skill `/add-product`** funcionando en modo automático con Claude para Chrome (extrae precio/imagen/valoraciones/features del DOM de Amazon).
 - **Página de detalle** (`/producto/:id`) con features, CTA, relacionados y JSON-LD. Las cards navegan a ella.
 - **SEO:** sitemap automático, robots.txt, datos estructurados (Product/BreadcrumbList/Organization) y dominio centralizado en `src/config/site.ts` (`https://bago-tech.vercel.app`).
@@ -229,14 +229,18 @@ Cuando la cuenta de afiliado esté consolidada (tras 3 ventas cualificadas), se 
 - **Banner de cookies (RGPD):** `src/components/CookieConsent.tsx` + `src/utils/consent.ts`. GA **solo carga tras aceptar**. Enlace "Configurar cookies" en el footer para cambiar la decisión.
 - **Imagen Open Graph:** `public/og-image.jpg` (1200x630, generada con el logo real de la marca). `index.html` usa URLs absolutas para `og:image`/`twitter:image` (requisito del protocolo).
 - **Sección de Ofertas + filtros:** nueva sección "Ofertas Especiales" en Home (4 mayores descuentos) y enlace "Ofertas" en el header (`/productos?sale=1`). Se arregló un bug donde `?sale=1` no se leía al cargar la URL. Se expusieron en la UI los filtros de precio (5 rangos) y valoración mínima que ya existían en `useProducts`.
+- **Optimización de imágenes:** `src/utils/images.ts` (`getResizedAmazonImage`) reescribe la URL del CDN de Amazon para pedir el tamaño justo (miniaturas 600px, ficha 1000px, antes siempre 1500px). Contenedor `aspect-square` en la ficha de producto para eliminar el salto de layout (CLS). `fetchpriority="high"` + `decoding="async"` en la imagen de ficha (elemento LCP).
 
 ### Próximos pasos (ideas, sin empezar)
 1. **Google Search Console:** registrar `bago-tech.vercel.app` y enviar el sitemap.
 2. **Afinar la página Legal** (`src/pages/Legal.tsx`) para mencionar explícitamente Google Analytics y el tratamiento de datos (el banner de cookies enlaza ahí).
-3. **Optimización de imágenes:** lazy loading, tamaños, evitar saltos de layout (CLS) en las imágenes de producto.
-4. **Verificar GA en producción:** confirmar eventos en Tiempo real/DebugView desde un navegador sin bloqueadores (los adblockers ocultan tráfico propio).
-5. **(Futuro)** Comprar dominio propio si hay tráfico → cambiar `SITE_URL` en los 4 sitios indicados.
-6. **(Futuro)** Prerender/SSR para que los datos estructurados no dependan de JS.
+3. **Verificar GA en producción:** confirmar eventos en Tiempo real/DebugView desde un navegador sin bloqueadores (los adblockers ocultan tráfico propio).
+4. **(Futuro)** Comprar dominio propio si hay tráfico → cambiar `SITE_URL` en los 4 sitios indicados.
+5. **(Futuro)** Prerender/SSR para que los datos estructurados no dependan de JS.
+
+### Notas técnicas para la próxima sesión
+- El navegador de previsualización (`Claude_Browser`, `localhost`) **no tiene acceso a internet externo** en este entorno: no se pueden cargar imágenes reales de `media-amazon.com` ni navegar a dominios externos (`bago-tech.vercel.app`, `analytics.google.com`) desde ahí. Para verificar lógica que depende de red externa, usar validación determinista (Node/regex) en vez de carga real de imágenes.
+- `getResizedAmazonImage()` soporta dos formatos de URL de Amazon: `._AC_SL1500_.jpg` y `._SL1500_.jpg` (sin prefijo de 2 letras). Si se añaden productos con URLs de imagen manuales, verificar que siguen alguno de estos dos patrones.
 
 ### Objetivo de negocio
 Conseguir las **3 ventas cualificadas** (en 180 días) que validan la cuenta de afiliado, o Amazon la cierra por inactividad (ya pasó una vez).
