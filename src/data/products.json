@@ -616,5 +616,210 @@
         ],
         "isFeatured": false,
         "isBestSeller": false
+    },
+    {
+        "id": "37",
+        "title": "XIAOMI Redmi Buds 8 Lite, Auriculares Inalámbricos con Cancelación de Ruido ANC de hasta 42dB, Negro",
+        "description": "Auriculares inalámbricos con cancelación activa de ruido (ANC) de hasta 42dB, driver de 12,4mm y hasta 36 horas de autonomía con el estuche de carga.",
+        "price": 19.29,
+        "rating": 4.1,
+        "reviewCount": 4300,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/51raoIRXqeL._AC_SL1500_.jpg",
+        "asin": "B0FRSCXWSV",
+        "features": [
+            "Cancelación de ruido ANC de hasta 42 dB con micrófonos híbridos",
+            "Reducción de ruido con IA en llamadas (doble micrófono)",
+            "Driver de 12,4mm con diafragma de titanio",
+            "Hasta 8 horas de reproducción (36h con el estuche de carga)",
+            "5 modos EQ preestablecidos"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "38",
+        "title": "Soundcore Q20i Cascos Bluetooth con Cancelación de Ruido Híbrida ANC, Hi-Res, 40 Horas de Batería",
+        "description": "Cascos Bluetooth con cancelación de ruido activa híbrida (hasta 90%), controladores de 40mm con tecnología BassUp y hasta 40 horas de batería con ANC activada.",
+        "price": 33.03,
+        "originalPrice": 49.99,
+        "rating": 4.7,
+        "reviewCount": 72798,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/61+2Wr079NL._AC_SL1500_.jpg",
+        "asin": "B0C3HCD34R",
+        "features": [
+            "Cancelación de ruido activa híbrida (hasta 90%)",
+            "Controladores de 40mm con tecnología BassUp",
+            "Hasta 40 horas de batería con ANC (60h en modo normal)",
+            "Compatible con audio Hi-Res vía cable AUX",
+            "Carga rápida"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "39",
+        "title": "XIAOMI Smart Band 10 Pro, Pulsera Inteligente con Pantalla AMOLED 1,74\", GPS y hasta 21 Días de Autonomía, Plata",
+        "description": "Pulsera inteligente con pantalla AMOLED de 1,74'', GPS independiente de 5 sistemas, seguimiento de sueño y hasta 21 días de autonomía.",
+        "price": 48.49,
+        "rating": 4.3,
+        "reviewCount": 595,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/6165iGMjNiL._AC_SL1500_.jpg",
+        "asin": "B0GQ3FLTL5",
+        "features": [
+            "Pantalla AMOLED de 1,74'' con biseles ultrafinos",
+            "Seguimiento de HRV durante el sueño",
+            "Sincronización de notificaciones con dos teléfonos a la vez",
+            "GPS independiente de 5 sistemas (GPS, GLONASS, BeiDou, Galileo, QZSS)",
+            "Hasta 21 días de autonomía con uso ligero"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "40",
+        "title": "Apple EarPods (USB-C)",
+        "description": "Auriculares con conector USB-C, mando integrado en el cable para volumen, reproducción y llamadas, y mayor protección contra agua y sudor.",
+        "price": 16.99,
+        "originalPrice": 19.00,
+        "rating": 4.6,
+        "reviewCount": 15955,
+        "category": "Tecnología",
+        "imageUrl": "https://m.media-amazon.com/images/I/51oMc4XRaaL._AC_SL1500_.jpg",
+        "asin": "B0DCNWN8NZ",
+        "features": [
+            "Conector USB-C",
+            "Mando integrado en el cable: volumen, reproducción y llamadas",
+            "Diseñados por Apple",
+            "Bajos más profundos y con más matices",
+            "Mayor protección contra el agua y el sudor"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "41",
+        "title": "INIU Power Bank 20000mAh, Batería Externa Pequeña con Carga Rápida 22,5W",
+        "description": "Batería externa de 20000mAh con carga rápida de 22,5W y tamaño de bolsillo. 2 puertos USB-C y 1 USB-A para cargar varios dispositivos a la vez.",
+        "price": 29.99,
+        "originalPrice": 32.99,
+        "rating": 4.5,
+        "reviewCount": 9901,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/71SPwRgAO5L._AC_SL1500_.jpg",
+        "asin": "B0FX9HMGWS",
+        "features": [
+            "20000mAh con tamaño de bolsillo, ideal para viajar",
+            "Carga rápida de 22,5W: 75% de energía en 25 minutos",
+            "Carga un iPhone 16 hasta 4 veces",
+            "2 puertos USB-C y 1 puerto USB-A",
+            "Compatible con smartphones, tablets, GPS y más"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "42",
+        "title": "Cargador USB C 40W, Adaptador de Pared con Carga Rápida PD+QC, 2 USB-C y 2 USB-A",
+        "description": "Cargador de pared de 40W con 2 puertos USB-C y 2 USB-A, carga rápida PD+QC. Compatible con iPhone, iPad, Samsung y más dispositivos.",
+        "price": 9.99,
+        "rating": 4.4,
+        "reviewCount": 3642,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/511L+yrGgIL._AC_SL1500_.jpg",
+        "asin": "B0D8SDJVSN",
+        "features": [
+            "Potencia total de hasta 40W con carga rápida PD+QC",
+            "4 puertos: 2 USB-C y 2 USB-A para cargar varios dispositivos",
+            "Carga un iPhone del 0% al 50% en 30 minutos",
+            "Compatible con iPhone, iPad, Samsung y más",
+            "Diseño compacto para pared"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "43",
+        "title": "Fokky Gomas Elásticas Musculación (Set de 5), Látex Natural con Bolsa de Transporte",
+        "description": "Set de 5 bandas elásticas de resistencia (4-30 lbs) en látex natural, con bolsa de transporte. Ideales para entrenamiento de fuerza, yoga y pilates.",
+        "price": 5.99,
+        "originalPrice": 12.99,
+        "rating": 4.4,
+        "reviewCount": 13257,
+        "category": "Accesorios",
+        "imageUrl": "https://m.media-amazon.com/images/I/51sVFEQCXXL._AC_SL1500_.jpg",
+        "asin": "B09CTVQWK8",
+        "features": [
+            "Set de 5 bandas con 5 niveles de resistencia (4-30 lbs)",
+            "Material de látex natural, duradero y suave con la piel",
+            "Ideal para entrenamiento de fuerza, glúteos, yoga y pilates",
+            "Incluye bolsa de transporte",
+            "Apto para principiantes y deportistas avanzados"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "44",
+        "title": "Todocama Almohada Viscoelástica Aloe Vera (Pack 2 Unidades, 70cm), Firmeza Media-Alta, Fabricada en España",
+        "description": "Pack de 2 almohadas viscoelásticas de 70cm con núcleo compacto, firmeza media-alta y doble funda lavable con cremallera. Fabricadas en España.",
+        "price": 29.99,
+        "rating": 4.5,
+        "reviewCount": 216,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/81AonVX6smL._AC_SL1500_.jpg",
+        "asin": "B0H1H86BF3",
+        "features": [
+            "Núcleo 100% viscoelástico, se adapta al contorno de cabeza y cuello",
+            "Ayuda a mantener la alineación cervical durante el sueño",
+            "Doble funda lavable a 40°C con cremallera",
+            "Tratamiento antiácaros",
+            "Fabricada en España, pack de 2 unidades"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "45",
+        "title": "Amazon Basics Paquete de 6 Bolsas de Vacío para Almacenamiento de Ropa, con Bomba Manual, Tamaño Extragrande",
+        "description": "Pack de 6 bolsas de vacío extragrandes (100x76cm) con bomba manual incluida. Reducen el tamaño de la ropa hasta un 80% y protegen de humedad y polvo.",
+        "price": 15.16,
+        "rating": 4.5,
+        "reviewCount": 156453,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/519ULj1nv8L._AC_.jpg",
+        "asin": "B07RN64P2R",
+        "features": [
+            "Reduce el tamaño de ropa, toallas o sábanas hasta un 80%",
+            "Protege de humedad, moho y olores",
+            "Incluye bomba manual (compatible también con aspiradora)",
+            "Cremallera de doble sellado y válvula robusta",
+            "Pack de 6 bolsas extragrandes (100 x 76cm)"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
+    },
+    {
+        "id": "46",
+        "title": "Philips Tostadora de Pan 2 Ranuras, 8 Ajustes, Calientabollos, Negro",
+        "description": "Tostadora de 2 ranuras con 8 ajustes de tostado, función de recalentamiento y descongelación, y bandeja recogemigas desmontable.",
+        "price": 21.99,
+        "originalPrice": 31.99,
+        "rating": 4.5,
+        "reviewCount": 61486,
+        "category": "Hogar",
+        "imageUrl": "https://m.media-amazon.com/images/I/61sh9RMgtyL._AC_SL1500_.jpg",
+        "asin": "B01N9XBDTI",
+        "features": [
+            "2 ranuras con 8 ajustes de tostado",
+            "Función de recalentamiento y descongelación",
+            "Botón de cancelar y desconexión automática de seguridad",
+            "Bandeja recogemigas desmontable de fácil limpieza",
+            "Rejilla calientabollos incluida"
+        ],
+        "isFeatured": false,
+        "isBestSeller": false
     }
 ]
