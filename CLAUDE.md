@@ -217,11 +217,11 @@ Cuando la cuenta de afiliado esté consolidada (tras 3 ventas cualificadas), se 
 
 ---
 
-## Estado del proyecto (última sesión: 2026-08-11)
+## Estado del proyecto (última sesión: 2026-08-24)
 
 ### Hecho
 - **Tag de afiliado** unificado a `bagotech-21` (cuenta de Francisco García) en código, `.env` y Vercel. La cuenta se había cerrado por inactividad y se reactivó.
-- **Catálogo:** **30 productos reales** (ids 1, 2, 9–36). Reparto equilibrado: Tecnología (12), Hogar (9), Accesorios (9). Eliminados los demo con ASIN falsos.
+- **Catálogo:** **40 productos reales** (ids 1, 2, 9–46). Reparto equilibrado: Tecnología (16), Hogar (12), Accesorios (12). Eliminados los demo con ASIN falsos.
 - **Skill `/add-product`** funcionando en modo automático con Claude para Chrome (extrae precio/imagen/valoraciones/features del DOM de Amazon).
 - **Página de detalle** (`/producto/:id`) con features, CTA, relacionados y JSON-LD. Las cards navegan a ella.
 - **SEO:** sitemap automático, robots.txt, datos estructurados (Product/BreadcrumbList/Organization) y dominio centralizado en `src/config/site.ts` (`https://bago-tech.vercel.app`).
@@ -240,7 +240,12 @@ Cuando la cuenta de afiliado esté consolidada (tras 3 ventas cualificadas), se 
 
 ### Notas técnicas para la próxima sesión
 - El navegador de previsualización (`Claude_Browser`, `localhost`) **no tiene acceso a internet externo** en este entorno: no se pueden cargar imágenes reales de `media-amazon.com` ni navegar a dominios externos (`bago-tech.vercel.app`, `analytics.google.com`) desde ahí. Para verificar lógica que depende de red externa, usar validación determinista (Node/regex) en vez de carga real de imágenes.
-- `getResizedAmazonImage()` soporta dos formatos de URL de Amazon: `._AC_SL1500_.jpg` y `._SL1500_.jpg` (sin prefijo de 2 letras). Si se añaden productos con URLs de imagen manuales, verificar que siguen alguno de estos dos patrones.
+- `getResizedAmazonImage()` soporta dos formatos de URL de Amazon: `._AC_SL1500_.jpg` y `._SL1500_.jpg` (sin prefijo de 2 letras). Si una imagen no tiene sufijo de tamaño (p. ej. `._AC_.jpg`), la función devuelve la URL sin modificar (fallback seguro, no rompe nada).
+- **Al extraer productos de Amazon, el precio "original" (tachado) a veces viene mal formado** (valores absurdamente bajos, menores que el precio actual — parece un artefacto del DOM, quizá precio por unidad u otro campo). Siempre comprobar que `originalPrice > price` antes de guardarlo; si no, omitir el campo en vez de guardar un descuento falso.
+- Si hay **más de un navegador Chrome conectado** a la cuenta, `list_connected_browsers` obliga a preguntar al usuario cuál usar (vía `AskUserQuestion`) antes de cualquier acción de navegación — no elegir uno por defecto.
+
+### Objetivo de negocio
+Conseguir las **3 ventas cualificadas** (en 180 días) que validan la cuenta de afiliado, o Amazon la cierra por inactividad (ya pasó una vez).
 
 ### Objetivo de negocio
 Conseguir las **3 ventas cualificadas** (en 180 días) que validan la cuenta de afiliado, o Amazon la cierra por inactividad (ya pasó una vez).
